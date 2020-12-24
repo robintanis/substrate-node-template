@@ -1,0 +1,12 @@
+/home/robin/substrate-node-template/target/release/deps/sp_trie-012fae85dbd15fec.rmeta: /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/lib.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/error.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_header.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_codec.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/storage_proof.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/trie_stream.rs
+
+/home/robin/substrate-node-template/target/release/deps/libsp_trie-012fae85dbd15fec.rlib: /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/lib.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/error.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_header.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_codec.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/storage_proof.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/trie_stream.rs
+
+/home/robin/substrate-node-template/target/release/deps/sp_trie-012fae85dbd15fec.d: /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/lib.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/error.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_header.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_codec.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/storage_proof.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/trie_stream.rs
+
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/lib.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/error.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_header.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/node_codec.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/storage_proof.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/sp-trie-2.0.0/src/trie_stream.rs:

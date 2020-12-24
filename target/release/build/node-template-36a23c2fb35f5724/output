@@ -1,0 +1,1 @@
+cargo:rustc-env=SUBSTRATE_CLI_IMPL_VERSION=2.0.0-655bfdc-x86_64-linux-gnu

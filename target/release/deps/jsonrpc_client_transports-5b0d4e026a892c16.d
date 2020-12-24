@@ -1,0 +1,10 @@
+/home/robin/substrate-node-template/target/release/deps/jsonrpc_client_transports-5b0d4e026a892c16.rmeta: /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/lib.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/mod.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/duplex.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/local.rs
+
+/home/robin/substrate-node-template/target/release/deps/libjsonrpc_client_transports-5b0d4e026a892c16.rlib: /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/lib.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/mod.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/duplex.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/local.rs
+
+/home/robin/substrate-node-template/target/release/deps/jsonrpc_client_transports-5b0d4e026a892c16.d: /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/lib.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/mod.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/duplex.rs /home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/local.rs
+
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/lib.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/mod.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/duplex.rs:
+/home/robin/.cargo/registry/src/github.com-1ecc6299db9ec823/jsonrpc-client-transports-15.0.0/src/transports/local.rs:

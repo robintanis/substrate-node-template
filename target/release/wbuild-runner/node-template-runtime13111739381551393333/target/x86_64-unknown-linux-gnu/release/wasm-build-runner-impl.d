@@ -1,0 +1,1 @@
+/home/robin/substrate-node-template/target/release/wbuild-runner/node-template-runtime13111739381551393333/target/x86_64-unknown-linux-gnu/release/wasm-build-runner-impl: /home/robin/substrate-node-template/target/release/wbuild-runner/node-template-runtime13111739381551393333/src/main.rs
