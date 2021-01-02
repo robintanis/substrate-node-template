@@ -1,3 +1,7 @@
+TODO applicatie starten:
+
+`yarn start`
+
 # Substrate Node Template
 
 A new FRAME-based Substrate node, ready for hacking :rocket:
