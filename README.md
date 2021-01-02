@@ -1,6 +1,6 @@
 TODO applicatie starten:
 
-`yarn start`
+`./target/release/node-template --dev --tmp`
 
 # Substrate Node Template
 
