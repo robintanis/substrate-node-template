@@ -12,8 +12,8 @@ test:
 
 .PHONY: run
 run:
-	WASM_BUILD_TOOLCHAIN=nightly-2020-10-05 cargo run --release -- --dev --tmp
+	WASM_BUILD_TOOLCHAIN=nightly-2020-10-05-x86_64-unknown-linux-gnu cargo run --release -- --dev --tmp
 
 .PHONY: build
 build:
-	WASM_BUILD_TOOLCHAIN=nightly-2020-10-05 cargo build --release
+	WASM_BUILD_TOOLCHAIN=nightly-2020-10-05-x86_64-unknown-linux-gnu cargo build --release

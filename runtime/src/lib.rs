@@ -23,13 +23,13 @@ use sp_version::RuntimeVersion;
 #[cfg(feature = "std")]
 use sp_version::NativeVersion;
 
+use pallet_commodities::DefaultInstance;
 // A few exports that help ease life for downstream crates.
 #[cfg(any(feature = "std", test))]
 pub use sp_runtime::BuildStorage;
 pub use pallet_timestamp::Call as TimestampCall;
 pub use pallet_balances::Call as BalancesCall;
 pub use sp_runtime::{Permill, Perbill};
-pub use pallet_commodities::nft::UniqueAssets;
 pub use frame_support::{
 	construct_runtime, parameter_types, StorageValue,
 	traits::{KeyOwnerProofSystem, Randomness},
@@ -191,11 +191,13 @@ impl frame_system::Trait for Runtime {
 	type AccountData = pallet_balances::AccountData<Balance>;
 	/// Weight information for the extrinsics of this pallet.
 	type SystemWeightInfo = ();
+	
 }
 
 impl pallet_aura::Trait for Runtime {
 	type AuthorityId = AuraId;
 }
+
 
 impl pallet_grandpa::Trait for Runtime {
 	type Event = Event;
@@ -244,6 +246,9 @@ impl pallet_balances::Trait for Runtime {
 	type AccountStore = System;
 	type WeightInfo = ();
 }
+// The runtime system's hashing algorithm is used to uniquely identify commodities.
+pub type CommodityId<T> = <T as frame_system::Trait>::Hash;
+
 
 parameter_types! {
 	pub const TransactionByteFee: Balance = 1;
@@ -262,9 +267,30 @@ impl pallet_sudo::Trait for Runtime {
 	type Call = Call;
 }
 
+parameter_types! {
+    pub const MaxCommodities: u128 = 5;
+    pub const MaxCommoditiesPerUser: u64 = 2;
+}
+
+
 /// Configure the template pallet in pallets/template.
 impl pallet_template::Trait for Runtime {
 	type Event = Event;
+	type CommodityAdmin = frame_system::EnsureRoot<Self::AccountId>;
+    type CommodityInfo = Vec<u8>;
+    type CommodityLimit = MaxCommodities;
+	type UserCommodityLimit = MaxCommoditiesPerUser;
+	
+}
+
+
+impl pallet_commodities::Trait for Runtime {
+    type Event = Event;
+    type CommodityAdmin = frame_system::EnsureRoot<Self::AccountId>;
+    type CommodityInfo = Vec<u8>;
+    type CommodityLimit = MaxCommodities;
+	type UserCommodityLimit = MaxCommoditiesPerUser;
+	
 }
 
 // Create the runtime by composing the FRAME pallets that were previously configured.
@@ -284,8 +310,11 @@ construct_runtime!(
 		Sudo: pallet_sudo::{Module, Call, Config<T>, Storage, Event<T>},
 		// Include the custom logic from the template pallet in the runtime.
 		TemplateModule: pallet_template::{Module, Call, Storage, Event<T>},
+		Commodities: pallet_commodities::{Module,Call, Storage, Event<T>},
 	}
+	
 );
+
 
 /// The address format for describing accounts.
 pub type Address = AccountId;
@@ -402,6 +431,8 @@ impl_runtime_apis! {
 			opaque::SessionKeys::decode_into_raw_public_keys(&encoded)
 		}
 	}
+	
+	
 
 	impl fg_primitives::GrandpaApi<Block> for Runtime {
 		fn grandpa_authorities() -> GrandpaAuthorityList {
@@ -434,6 +465,7 @@ impl_runtime_apis! {
 			System::account_nonce(account)
 		}
 	}
+	
 
 	impl pallet_transaction_payment_rpc_runtime_api::TransactionPaymentApi<Block, Balance> for Runtime {
 		fn query_info(
@@ -443,6 +475,7 @@ impl_runtime_apis! {
 			TransactionPayment::query_info(uxt, len)
 		}
 	}
+	
 
 	#[cfg(feature = "runtime-benchmarks")]
 	impl frame_benchmarking::Benchmark<Block> for Runtime {
